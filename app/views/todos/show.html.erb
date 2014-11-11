@@ -1,0 +1,25 @@
+<div class="page-header">
+  <h3>ToDo - Show <small class = 'text-primary'>Organizing your chores</small></h3>
+</div>
+<table class = 'table'>
+  <thead>
+  <tr>
+    <th>To-Do Title</th>
+    <th>To-Do Notes</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr class= 'success'>
+    <td><%= @todo.title %></td>
+    <td> <%= @todo.notes %></td>
+  </tr>
+  </tbody>
+
+</table>
+
+
+
+
+<%= link_to 'Edit', edit_todo_path(@todo) %> |
+<%= link_to 'Back', todos_path %>
